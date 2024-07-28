@@ -1,5 +1,8 @@
 # AskJOE
 
+## Note
+AskJoe original project is https://github.com/securityjoes/AskJOE This repository contains an installation file, detailed installation steps and slightly change in the source code.
+
 ## What is AskJOE?
 AskJoe is a tool that utilizes [OpenAI](https://openai.com/) to assist researchers wanting to use [Ghidra](https://github.com/NationalSecurityAgency/ghidra) as their malware analysis tool. It was based on the [Gepetto](https://github.com/JusticeRage/Gepetto) idea.
 With its capabilities, OpenAI highly simplifies the practice of reverse engineering, allowing researchers to better detect and mitigate threats. 
@@ -9,6 +12,8 @@ With its capabilities, OpenAI highly simplifies the practice of reverse engineer
 The tool is free to use, under the limitations of Github.
 
 Author: https://twitter.com/moval0x1 | Threat Researcher, Security Joes
+
+Contributor: https://github.com/AzizKpln | Threat Researcher, Malware Analyst, CTI Analyst, ThreatMon
 
 ## Updates - 07/20/2024
 - Ghidrathon added and removed pyhidra
@@ -56,13 +61,27 @@ Author: https://twitter.com/moval0x1 | Threat Researcher, Security Joes
 > By now, It only supports Linux OS.
 
 ## How to install?
-Copy the ```AskJOE.py```, ```JOES.png``` and ```AskJOE folder```.
+<img width="60%" src="https://i.ibb.co/ySM60kT/install1.png">
 
-![ghidra_scripts home](/imgs/ghidra_scripts_home.png "ghidra_scripts home")
+> Firstly run the install.sh this will setup everything that's needed for AskJOE
 
-Within any of the ```ghidra_scripts``` folders.
+<img width="60%" src="https://i.ibb.co/LgF3KcB/install2.png">
 
-![ghidra_scripts folders](/imgs/ghidra_scripts_folders.png "ghidra_scripts folders")
+> Then, give your OpenAI API Key when the project asks for an API Key
+
+> When the installation is done, start Ghidra
+
+<img width="60%" src="https://i.ibb.co/C9bH8m5/2024-07-28-12-20-35-Debian-al-yor-Oracle-VM-Virtual-Box.png">
+
+> Go to File > install extensions
+
+<img width="60%" src="https://i.ibb.co/v1yshHT/2024-07-28-12-25-29-Debian-al-yor-Oracle-VM-Virtual-Box.png">
+
+> Click on "+" icon and select the AskJOE/Ghidrathon-v4.0.0/Ghidrathon-v4.0.0.zip
+
+> When you create a project make sure Ghidrathon extension is active
+
+
 
 ## Credits
 Some functions were added in the AskJOE, but we did not create them. Let us give the proper credit.
@@ -70,3 +89,4 @@ Some functions were added in the AskJOE, but we did not create them. Let us give
 - [Stack Strings](https://github.com/reb311ion/replica/blob/fede41b9afd2ef5e33c860ce114e8a24193751ac/replica.py#L560)
 - [Crypto Constants](https://github.com/reb311ion/replica/blob/fede41b9afd2ef5e33c860ce114e8a24193751ac/replica.py#L527)
 - [Capa Explorer](https://github.com/mandiant/capa/blob/master/capa/ghidra/capa_explorer.py)
+
