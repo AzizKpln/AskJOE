@@ -22,7 +22,7 @@ def read_config(section_name, key_name) -> str:
 
 
 def ask_open_ai(prompt, decompiled_function="") -> object:
-    client = OpenAI(api_key=read_config('KEY', 'OPEN_AI'))
+    client = OpenAI(api_key="HERE_API")
 
     response = client.chat.completions.create(
         model="gpt-4o",
