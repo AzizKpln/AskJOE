@@ -15,52 +15,36 @@ Author: https://twitter.com/moval0x1 | Threat Researcher, Security Joes
 
 Contributor: https://github.com/AzizKpln | Threat Researcher, Malware Analyst, CTI Analyst, ThreatMon
 
-## Updates - 07/20/2024
+## Features
 - Ghidrathon added and removed pyhidra
 - Refactored Code
 - AI Triage added
 - Better Name added
 - Search for crypto constants added
 - Mandiant CAPA added
-
-## Updates - 07/31/2023
 - Search XORs
 - Ask User Prompt (To OpenAI)
-
-## Updates - 05/23/2023
 - askChoices added
 - Explain selection added
 - Config file added
-
-## Updates - 05/11/2023
 - Execute all added
 - Stack String added
 - Rename function added
 - Changed color from function renamed added
 - Changed max_tokens
-
-## Updates - 05/08/2023
 - Code refactored
 - Explain function added
 - Simplify code added
 - Set OpenAI answer to comment added
 - Monitor messages added
 
-## Dependencies
-- requests: `pip install requests`
-- flare-capa: `pip install flare-capa`
-- openai: `pip install openai`
-- [Ghidra](https://github.com/NationalSecurityAgency/ghidra)
-- [Python3](https://www.python.org/downloads/)
-- [Ghidrathon](https://github.com/mandiant/Ghidrathon)
-
-
 ## Limitations
 > OpenAI has a hard limit of 4096 tokens for each API call, so if your text is longer than that, you'll need to split it up. However, OpenAI currently does not support stateful conversations over multiple API calls, which means it does not remember the previous API call.
 
-> By now, It only supports Linux OS.
+## Supported OS
+> For now, this project can only be used in Linux Distributions.
 
-## How to install?
+## Installation
 <img width="60%" src="https://i.ibb.co/ySM60kT/install1.png">
 
 > Firstly run the install.sh this will setup everything that's needed for AskJOE
